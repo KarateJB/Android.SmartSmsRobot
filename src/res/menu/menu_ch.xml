@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/actions"
+          android:title="切換功能頁面" />
+    <item android:id="@+id/about"
+          android:title="關於" />
+    <item android:id="@+id/exit"
+          android:title="結束" />
+</menu>

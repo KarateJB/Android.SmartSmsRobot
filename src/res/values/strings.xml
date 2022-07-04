@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  <string name="app_name">智慧型簡訊機器人管家 </string>  -->
+    
+    <!-- Android_SMSvc.java -->
+    
+    <string name="app_name">Smart SMS robot</string>
+    <string name="tv_Sms">JB EzSMS Service</string>
+    <string name="tv_SetupYear">Year</string>
+    <string name="tv_SetupYear_ch">年</string>
+    <string name="tv_SetupMon">Mon</string>
+    <string name="tv_SetupMon_ch">月</string>
+    <string name="tv_SetupDay">Day</string>
+    <string name="tv_SetupDay_ch">日</string>
+    <string name="tv_SetupTime">Time</string>
+    <string name="tv_SetupTime_ch">時間</string>
+    <string name="tv_SetupHour">HH</string>
+    <string name="tv_SetupHour_ch">時</string>
+    <string name="tv_SetupMin">MI</string>
+    <string name="tv_SetupMin_ch">分</string>
+    
+    <string name="tv_NewSms">Create MY-SMS</string>
+    <string name="tv_NewSms_ch">建立我的簡訊</string>
+    <string name="tv_MySms">Select MY-SMS</string>
+    <string name="tv_MySms_ch" >選擇我的簡訊</string>
+    <string name="bt_SaveSms">Create</string>
+    <string name="bt_SaveSms_ch">建立</string>
+    <string name="bt_SysSms">MY-SMS</string>
+    <string name="bt_SysSms_ch">我的簡訊</string>
+    <string name="bt_ClrSms">Clear</string>
+    <string name="bt_ClrSms_ch">清除</string>
+    <string name="bt_DelSms">Delete</string>
+    <string name="bt_DelSms_ch">刪除</string>
+     
+    <string name="bt_Save">Save</string>
+    <string name="bt_Save_ch">儲存</string>
+    <string name="bt_del">Delete</string>
+    <string name="bt_del_ch">刪除</string>
+    <string name="bt_mod">Update</string>
+    <string name="bt_mod_ch">更新</string>
+    <string name="tv_CheckList_SN">SN：</string>
+    <string name="tv_CheckList_SN_ch">序號：</string>
+    <string name="tv_CheckList_NAME">Receiver：</string>
+    <string name="tv_CheckList_NAME_ch">收訊人：</string>
+    <string name="tv_CheckList_DATETIME">Send DateTime：</string>
+    <string name="tv_CheckList_DATETIME_ch">發送時間：</string>
+    <string name="tv_CheckList_SMS_DESC">Your SMS：</string>
+    <string name="tv_CheckList_SMS_DESC_ch">簡訊內容：</string>
+    <string name="tv_CheckList_SENDGEO">Send Geo ?</string>
+    <string name="tv_CheckList_SENDGEO_ch">發送地理位置 ?</string>
+    <string name="tv_CheckList_SEBD2ME">Send Log ?</string>
+    <string name="tv_CheckList_SEBD2ME_ch">回傳紀錄 簡訊?</string>
+    <string name="cb_SendLog2Me">Send-Log On/Off</string>
+    <string name="cb_SendLog2Me_ch">回傳紀錄 簡訊 On/Off</string>
+    <string name="bt_SendLog2Me">Select</string>
+    <string name="bt_SendLog2Me_ch">選擇</string>
+    <string name="tv_SendLog2Me">(empty)</string>
+    <string name="tv_SendLog2Me_ch">(無)</string>
+    <string name="cb_StartupService">Startup Service On/Off</string>
+    <string name="cb_StartupService_ch">開機啟動服務 On/Off</string>
+    <string name="cb_SendGEO">Send-My-GPS On/Off</string>
+    <string name="cb_SendGEO_ch">發送地理位置 On/Off</string>
+    <string name="cb_SendNotify">Send Notification On/Off</string>
+    <string name="cb_SendNotify_ch">發送通知 On/Off</string>
+    
+    <!-- Android_SMSbs.java -->   
+    <string name="tv_LockPwd">Enter Password:</string>
+    <string name="tv_LockPwd_ch">輸入密碼:</string>
+    <string name="tv_UnlockPwd">Enter Unlock Password:</string>
+    <string name="tv_UnlockPwd_ch">輸入解鎖密碼:</string>
+        
+    <!-- For Toast message -->
+    
+    <!-- Android_JBSMS_GP.java -->
+    <string name="tm_SetLanguage_title">Language/語言</string>
+    
+    <!-- Android_SMSvc.java -->
+    <string name="tm_EVT_sms_empty">Plz Write your SMS first!</string>
+    <string name="tm_EVT_sms_empty_ch">請先輸入簡訊內容!</string>
+    <string name="tm_EVT_sms_toolong">SMS length should be less than 160!</string>
+    <string name="tm_EVT_sms_toolong_ch">簡訊內容字數不能超過160個字元!</string>
+    <string name="tm_EVT_sms_saved_suc">SMS Saved!</string>
+    <string name="tm_EVT_sms_saved_suc_ch">已儲存至我的簡訊!</string>
+    <string name="tm_EVT_sms_saved_fail">SMS cannot be saved!</string>
+    <string name="tm_EVT_sms_saved_fail_ch">無法儲存!</string>
+    <string name="tm_EVT_sms_del_empty">Choose a MySMS first and then delete.</string>
+    <string name="tm_EVT_sms_del_empty_ch">請先選擇一個[我的簡訊]，再執行刪除。</string>
+    
+    <string name="tm_EVT_sms_del_confirm_title">Confirm delete</string>
+    <string name="tm_EVT_sms_del_confirm_title_ch">刪除確認</string>
+    <string name="tm_EVT_sms_del_confirm">The saved SMS event will also be deleted, Confirm?</string>
+    <string name="tm_EVT_sms_del_confirm_ch">包含此簡訊內容的所有[預約簡訊]會被刪除，請確認?</string>
+    
+    <string name="tm_EVT_sms_del_rslt_title">Delete result</string> 
+    <string name="tm_EVT_sms_del_rslt_title_ch">刪除結果</string> 
+    <string name="tm_EVT_sms_del_rslt_fail">Delete failed!</string>
+    <string name="tm_EVT_sms_del_rslt_fail_ch">刪除失敗!</string>
+    
+    <string name="tm_EVT_smsevent_save_noreceiver">Select at least one RECEIVER!</string>
+    <string name="tm_EVT_smsevent_save_noreceiver_ch">請至少選擇一個收訊人!</string>
+    
+    <string name="tm_EVT_smsevent_save_suc">Saved Successfully!</string>
+    <string name="tm_EVT_smsevent_save_suc_ch">儲存成功!</string>
+    <string name="tm_EVT_smsevent_save_fail">Cannot Save!</string>
+    <string name="tm_EVT_smsevent_save_fail_ch">無法儲存!</string>
+    <string name="tm_EVT_smsevent_upt_suc">Updated Successfully!</string>
+    <string name="tm_EVT_smsevent_upt_suc_ch">更新成功!</string>
+    <string name="tm_EVT_smsevent_upt_fail">Cannot Update!</string>
+    <string name="tm_EVT_smsevent_upt_fail_ch">無法更新!</string>
+    <string name="tm_EVT_smsevent_del_suc">Deleted Successfully!</string>
+    <string name="tm_EVT_smsevent_del_suc_ch">刪除成功!</string>
+    <string name="tm_EVT_smsevent_del_fail">Cannot Delete!</string>
+    <string name="tm_EVT_smsevent_del_fail_ch">無法刪除!</string>
+    <string name="tm_EVT_smsevent_load_fail">Fail to load SMS Events!</string>
+    <string name="tm_EVT_smsevent_load_fail_ch">[預約簡訊]載入失敗!</string>
+
+        
+    <string name="tm_EVT_setup_save_suc">Saved Successfully!</string>
+    <string name="tm_EVT_setup_save_suc_ch">儲存成功!</string>
+    <string name="tm_EVT_setup_save_fail">Cannot Save!</string>
+    <string name="tm_EVT_setup_save_fail_ch">無法儲存!</string>
+        
+    <!-- Android_SMSbs.java -->
+    <string name="tm_SMS_nosave_empty">Cannot save empty SMS!</string>
+    <string name="tm_SMS_nosave_empty_ch">無法儲存空白簡訊!</string>
+    <string name="tm_SMS_saved_suc">Saved Successfully!</string>
+    <string name="tm_SMS_saved_suc_ch">成功儲存!</string>
+    <string name="tm_SMS_saved_fail">Cannot Save!</string>
+    <string name="tm_SMS_saved_fail_ch">無法儲存!</string>
+    
+    <string name="tm_SMS_del_suc">Deleted Successfully!</string>
+    <string name="tm_SMS_del_suc_ch">成功刪除!</string>
+    <string name="tm_SMS_del_fail">Cannot Delete!</string>
+    <string name="tm_SMS_del_fail_ch">無法刪除!</string>
+    
+    <string name="tm_SMS_reply_suc">Reply Successfully!</string>
+    <string name="tm_SMS_reply_suc_ch">成功回覆!</string>
+    <string name="tm_SMS_reply_fail">Reply failed!Plz try again.</string>
+    <string name="tm_SMS_reply_fail_ch">回覆失敗!請重試。</string>
+    
+    <string name="tm_SMS_read_fail">Cannot load the SMS!</string>
+    <string name="tm_SMS_read_fail_ch">無法載入簡訊!</string>
+    
+    <string name="tm_SMS_del_confirm_title">Confirm Delete</string>
+    <string name="tm_SMS_del_confirm_title_ch">刪除確認</string>  
+    <string name="tm_SMS_del_confirm_str">Do you really delete this SMS?</string>
+    <string name="tm_SMS_del_confirm_str_ch">請確認是否刪除?</string>
+    
+    <string name="tm_SMS_Lock_confirm_title">Confirm Lock</string> 
+    <string name="tm_SMS_Lock_confirm_title_ch">鎖定確認</string>   
+    <string name="tm_SMS_Lock_NoPwd">Plz enter password!</string>
+    <string name="tm_SMS_Lock_NoPwd_ch">請輸入密碼!</string>
+    
+    <string name="tm_SMS_Lock_ok">Locked!</string> 
+    <string name="tm_SMS_Lock_ok_ch">已鎖定!</string>  
+    <string name="tm_SMS_Unlock_suc">Unlock successfully!</string>
+    <string name="tm_SMS_Unlock_suc_ch">成功解除鎖定!</string>
+    <string name="tm_SMS_Unlock_fail">Wrong password!</string>
+    <string name="tm_SMS_Unlock_fail_ch">密碼不正確!</string>
+    
+    <!-- Android_SMSbk.java -->
+    <string name="tm_BK_backup_confirm_title">Confirm Backup</string>
+    <string name="tm_BK_backup_confirm_title_ch">備份確認</string>
+    <string name="tm_BK_backup_confirm_str">The PREVIOUS BACKUP will be COVERED!! Confirm?</string>
+    <string name="tm_BK_backup_confirm_str_ch">先前的備份將被取代，是否開始執行備份?</string>
+    <string name="tm_BK_recovery_confirm_title">Confirm Recovery</string>
+    <string name="tm_BK_recovery_confirm_title_ch">還原確認</string>
+    <string name="tm_BK_recovery_confirm_str">The current data will be COVERED!! Confirm?</string>
+    <string name="tm_BK_recovery_confirm_str_ch">所有資料將還原，未備份資料將會遺失! 是否開始執行還原?</string>
+    
+    
+    <string name="tm_BK_backup_suc">Export successfully! </string>
+    <string name="tm_BK_backup_suc_ch">備份完成! </string>
+    <string name="tm_BK_backup_fail01">External storage is not available, unable to export data.</string>
+    <string name="tm_BK_backup_fail01_ch">無法存取外部SD卡，無法匯出備份檔案。</string>
+    <string name="tm_BK_backup_fail02">Export failed! </string>
+    <string name="tm_BK_backup_fail02_ch">備份失敗! </string>
+    
+    <string name="tm_BK_recovery_suc">Import successfully! </string>
+    <string name="tm_BK_recovery_suc_ch">還原成功! </string>
+    <string name="tm_BK_recovery_fail01">External storage is not available, unable to import data.</string>
+    <string name="tm_BK_recovery_fail01_ch">無法存取外部SD卡，無法匯入還原檔案。</string>
+    <string name="tm_BK_recovery_fail02">Import failed! </string>
+    <string name="tm_BK_recovery_fail02_ch">還原失敗! </string>
+    
+        
+        
+    <!-- For Option  -->
+    
+    <string name="tm_OP_option">Option</string>
+    <string name="tm_OP_done">Done</string>
+    <string name="tm_OP_alert">Alert</string>
+    <string name="tm_OP_option_ch">選項</string>
+    <string name="tm_OP_done_ch">完成</string>
+    <string name="tm_OP_alert_ch">警告</string>
+    
+    <string name="tm_OP_open">Open</string>
+    <string name="tm_OP_insert">Insert</string>
+    <string name="tm_OP_update">Update</string>
+    <string name="tm_OP_del">Delete</string>
+    <string name="tm_OP_open_ch">開啟</string>
+    <string name="tm_OP_insert_ch">新增</string>
+    <string name="tm_OP_update_ch">更新</string>
+    <string name="tm_OP_del_ch">刪除</string>
+    
+    <string name="tm_OP_yes">Yes</string>
+    <string name="tm_OP_no">No</string>
+    <string name="tm_OP_cancel">Cancel</string>
+    <string name="tm_OP_yes_ch">是</string>
+    <string name="tm_OP_no_ch">否</string>
+    <string name="tm_OP_cancel_ch">取消</string>
+    
+    <string name="tm_OP_year_title">Select YEAR</string>
+    <string name="tm_OP_year_title_ch">選擇年份</string>
+    <string name="tm_OP_mon_title">Select MONTH</string>
+    <string name="tm_OP_mon_title_ch">選擇月份</string>
+    <string name="tm_OP_day_title">Select DAY</string>
+    <string name="tm_OP_day_title_ch">選擇日</string>
+    
+    <!-- For sms_event.xml -->
+    <string name="tv_SN">SN</string>
+    <string name="tv_NAME">Receiver</string>
+    <string name="tv_PHONE_NUM">Phone#</string>
+    <string name="tv_DATETIME">DateTime</string>
+    <string name="tv_SMS_DESC">SMS</string>
+    <string name="tv_SEND_GEO">Send-GEO</string>
+    <string name="tv_SEND_ME">Send-Log-Back</string>
+    <string name="tv_LSTSENDDT">Last time send</string>
+    
+    <!-- For sms_box.xml -->
+    <string name="tv_SELECT"></string>
+    <!-- <string name="tv_SN">SN</string> -->
+    <!-- <string name="tv_DATETIME">DateTime</string> -->
+    <string name="tv_ENC_FLG">Encrypt</string>
+    <string name="tv_SENDER">Sender</string>
+    <string name="tv_FILE_NAME">File Name</string>
+    <string name="tv_KEY">Key</string>
+    <string name="tv_SMS">SMS</string>
+    
+    
+    <string name="empty_String"></string>
+    
+    
+</resources>

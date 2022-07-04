@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+ 
+<LinearLayout 
+    android:id="@+id/Layout_Title"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    >
+
+
+</LinearLayout>
+
+    
+    
+<LinearLayout android:id="@+id/Layout_admob" 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal" 
+               android:orientation="horizontal"
+               android:visibility="visible">
+               
+</LinearLayout>
+    
+    
+    
+<LinearLayout 
+ android:id="@+id/Layout_Menu" android:layout_width="match_parent"
+ android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" 
+ android:visibility="visible">
+ 
+    <LinearLayout 
+ android:id="@+id/Layout_Menu_Chd01" android:layout_width="wrap_content"
+ android:layout_height="wrap_content" android:gravity="center_vertical" 
+ android:orientation="vertical"
+ android:visibility="visible">
+    <ImageButton android:layout_width="150px" android:layout_height="70px" android:id="@+id/imb_contact" android:background="@drawable/imb_main01_01"/>
+    <ImageButton android:layout_width="120px" android:layout_height="70px" android:id="@+id/imb_time" android:background="@drawable/imb_main01_02"></ImageButton>
+    <ImageButton android:layout_width="150px" android:layout_height="70px" android:id="@+id/imb_sms" android:background="@drawable/imb_main01_03"></ImageButton>
+</LinearLayout>    
+  
+<LinearLayout 
+ android:id="@+id/Layout_Menu_Chd02" android:layout_width="wrap_content"
+ android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" 
+ android:orientation="vertical"
+ android:visibility="visible">  
+    <ImageView
+ android:id="@+id/iv_Title"
+ android:src="@drawable/main_title"
+    android:orientation="vertical"
+    android:layout_width="160px"
+    android:layout_height="160px"
+    android:gravity="center_vertical|center_horizontal"
+ ></ImageView>
+</LinearLayout>
+
+ 
+<LinearLayout 
+ android:id="@+id/Layout_Menu_Chd03" android:layout_width="wrap_content"
+ android:layout_height="wrap_content" android:orientation="vertical"
+ android:visibility="visible" android:gravity="right|center_vertical">    
+    <ImageButton android:layout_width="150px" android:layout_height="70px" android:id="@+id/imb_save" android:background="@drawable/imb_main01_04"></ImageButton>
+    <ImageButton android:layout_width="120px" android:layout_height="70px" android:id="@+id/imb_eventlog" android:background="@drawable/imb_main01_05"></ImageButton>
+    <ImageButton android:layout_width="150px" android:layout_height="70px" android:id="@+id/imb_setup" android:background="@drawable/imb_main01_06"></ImageButton>
+</LinearLayout>
+
+</LinearLayout>
+    
+<LinearLayout 
+ android:id="@+id/Layout_Contact" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:visibility="visible"
+ android:orientation="horizontal">
+   
+   <LinearLayout 
+    android:id="@+id/Layout_Contact_Button" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    >
+    <ImageButton android:layout_width="80px" android:layout_height="80px" android:background="@drawable/bt_open_contact" android:id="@+id/imb_open_contact"/>
+    <ImageButton android:layout_width="80px" android:layout_height="80px" android:background="@drawable/bt_clr_contact" android:id="@+id/imb_clr_contact"></ImageButton>
+    </LinearLayout>
+    
+   <LinearLayout 
+    android:id="@+id/Layout_Contact_list" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+   <ListView 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:drawSelectorOnTop="false" android:id="@+id/lv_Contact"/>
+   </LinearLayout>
+      
+</LinearLayout>
+    
+
+<LinearLayout 
+ android:id="@+id/Layout_DateTime" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:gravity="center_vertical|center_horizontal" 
+ android:visibility="visible">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableRow android:gravity="center_vertical|center_horizontal">
+    <TextView android:layout_width="wrap_content" style="@style/Label" android:layout_height="wrap_content" android:text="@string/tv_SetupYear" android:id="@+id/tv_SetYear"></TextView>
+    <TextView android:layout_width="wrap_content" style="@style/Label" android:layout_height="wrap_content" android:text="@string/tv_SetupMon" android:id="@+id/tv_SetMon"></TextView>
+    <TextView android:layout_width="wrap_content" style="@style/Label" android:layout_height="wrap_content" android:text="@string/tv_SetupDay" android:id="@+id/tv_SetDay"></TextView>
+    <TextView android:layout_width="wrap_content" style="@style/Label" android:layout_height="wrap_content" android:text="@string/tv_SetupHour" android:id="@+id/tv_SetHour"></TextView>
+    <TextView android:layout_width="wrap_content" style="@style/Label" android:layout_height="wrap_content" android:text="@string/tv_SetupMin" android:id="@+id/tv_SetMin"></TextView>
+    </TableRow>
+    
+    
+    <TableRow android:gravity="center_vertical|center_horizontal">
+    
+    
+    
+    <Button android:text="Year" 
+            android:id="@+id/bt_SetYear" 
+            android:background="@drawable/mybutton"
+            android:layout_width="100px" 
+            android:layout_height="wrap_content"
+            style="@style/Label_Date"
+            />
+    <Button android:text="Mon" 
+            android:id="@+id/bt_SetMon" 
+            android:background="@drawable/mybutton"
+            android:layout_width="100px" 
+            android:layout_height="wrap_content"
+            style="@style/Label_Date"
+            />
+    <Button android:text="Day" 
+            android:id="@+id/bt_SetDay" 
+            android:background="@drawable/mybutton"
+            android:layout_width="100px" 
+            android:layout_height="wrap_content"
+            style="@style/Label_Date"
+            />
+    <Button android:text="Hour" 
+            android:id="@+id/bt_SetHour" 
+            android:background="@drawable/mybutton"
+            android:layout_width="100px" 
+            android:layout_height="wrap_content"
+            style="@style/Label_Time"
+            />
+    <Button android:text="Min" 
+            android:id="@+id/bt_SetMin" 
+            android:background="@drawable/mybutton"
+            android:layout_width="100px" 
+            android:layout_height="wrap_content"
+            style="@style/Label_Time"
+            />
+   
+    </TableRow>
+</TableLayout>
+</LinearLayout>    
+
+
+ <ScrollView   
+   android:id="@+id/ScrollView_Sms"
+   android:gravity="center_vertical|center_horizontal"  
+   android:layout_height="wrap_content" 
+   android:layout_width="fill_parent">
+ <HorizontalScrollView 
+   android:id="@+id/HorizontalScrollView_Sms"
+   android:gravity="center_vertical|center_horizontal"  
+   android:layout_height="fill_parent" 
+   android:layout_width="wrap_content">
+    
+<LinearLayout 
+ android:id="@+id/Layout_Sms" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:gravity="center_vertical" 
+ android:orientation="vertical"
+ android:visibility="visible">    
+  
+ 
+ <LinearLayout 
+ android:id="@+id/Layout_Sms_New" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+ android:gravity="center_vertical" 
+ >
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_NewSms" android:id="@+id/tv_NewSms"></TextView> 
+ <EditText 
+  android:singleLine="false" 
+  android:text="" 
+  android:layout_height="wrap_content" 
+  android:layout_width="250px" android:id="@+id/et_NewSms">
+ </EditText>
+ 
+ <Button android:id="@+id/bt_SaveSms" 
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content" 
+          android:text="@string/bt_SaveSms"
+          style="@style/Button_Blue"
+          />
+  <Button android:id="@+id/bt_ClrSms" 
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content" 
+          android:text="@string/bt_ClrSms"
+          style="@style/Button_Green"
+          />
+</LinearLayout>
+
+ <LinearLayout 
+ android:id="@+id/Layout_Sms_Button" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+ android:gravity="center_vertical" 
+ > 
+ <TextView android:layout_width="wrap_content" 
+   android:layout_height="wrap_content" android:id="@+id/tv_MySms" android:text="@string/tv_MySms"></TextView> 
+ <EditText 
+  android:singleLine="false" 
+  android:text="" 
+  android:id="@+id/et_MySms" 
+  android:layout_height="wrap_content" 
+  android:layout_width="250px" android:editable="false" android:clickable="true">
+ </EditText>
+ 
+ <Button android:id="@+id/bt_SysSms" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:text="@string/bt_SysSms"
+         style="@style/Button_Yellow"
+         />
+ <Button android:layout_height="wrap_content" 
+         android:layout_width="wrap_content" 
+         android:id="@+id/bt_DelSms" 
+         android:text="@string/bt_DelSms"
+         style="@style/Button_Red"
+         />
+    
+</LinearLayout>    
+</LinearLayout> 
+
+
+</HorizontalScrollView>
+</ScrollView>
+
+     
+     
+    
+<LinearLayout 
+ android:id="@+id/Layout_SmsEvent" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:gravity="center_vertical|center_horizontal" 
+ android:orientation="vertical"
+ android:visibility="visible"> 
+ 
+
+ <ListView 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     style="@style/Label_Log"
+     android:drawSelectorOnTop="false" android:id="@+id/lv_SmsEvent"/>
+ </LinearLayout>
+ 
+    
+  
+ <ScrollView   
+   android:id="@+id/ScrollView_Save"
+   android:gravity="center_vertical|center_horizontal"  
+   android:layout_height="wrap_content" 
+   android:layout_width="fill_parent">
+ <HorizontalScrollView 
+   android:id="@+id/HorizontalScrollView_Save"
+   android:gravity="center_vertical|center_horizontal"  
+   android:layout_height="fill_parent" 
+   android:layout_width="wrap_content">
+ 
+     
+ <LinearLayout android:id="@+id/Layout_Save" 
+               android:layout_width="match_parent" 
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal" 
+               android:orientation="vertical"
+               android:visibility="visible">
+
+
+     
+     
+    <LinearLayout android:id="@+id/Layout_Save_CheckList" 
+                  android:layout_width="match_parent" 
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical|center_horizontal" 
+                  android:orientation="vertical"
+                  android:visibility="visible">
+    
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:orientation="vertical"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+    <TableRow android:gravity="center_vertical|center_horizontal">
+        <TextView android:id="@+id/tv_CheckList_SN" 
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" android:text="@string/tv_CheckList_SN"/>
+        <TextView android:id="@+id/tv_CheckList_SN_CP"
+                  style="@style/Label_CheckList"                   
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" android:text="@string/empty_String"/>
+    </TableRow>             
+    <TableRow android:gravity="center_vertical|center_horizontal">
+        <TextView android:id="@+id/tv_CheckList_NAME" 
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" android:text="@string/tv_CheckList_NAME"/>
+        <TextView android:id="@+id/tv_CheckList_NAME_CP" 
+                  style="@style/Label_CheckList"
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" android:text="@string/empty_String"/>
+    </TableRow>
+    <TableRow android:gravity="center_vertical|center_horizontal">
+        <TextView android:id="@+id/tv_CheckList_DATETIME" 
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" android:text="@string/tv_CheckList_DATETIME"/>
+        <TextView android:id="@+id/tv_CheckList_DATETIME_CP" 
+                  style="@style/Label_CheckList"
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" android:text="@string/empty_String"/>
+    </TableRow>
+    <TableRow android:gravity="center_vertical|center_horizontal">
+        <TextView android:id="@+id/tv_CheckList_SMS_DESC" 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="@string/tv_CheckList_SMS_DESC"/>
+        <TextView android:id="@+id/tv_CheckList_SMS_DESC_CP" 
+                  style="@style/Label_CheckList"
+                  android:singleLine="false"
+                  android:layout_width="300px"
+                  android:layout_height="wrap_content" android:text="@string/empty_String"/>
+    </TableRow>
+    <TableRow android:gravity="center_vertical|center_horizontal">
+    <TextView android:id="@+id/tv_CheckList_SENDGEO" 
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" android:text="@string/tv_CheckList_SENDGEO"/>
+    <CheckBox android:id="@+id/cb_Send2GEO" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow android:gravity="center_vertical|center_horizontal">
+    <TextView android:id="@+id/tv_CheckList_SEBD2ME" 
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" android:text="@string/tv_CheckList_SEBD2ME"
+                  android:visibility="gone"/>
+    <CheckBox android:id="@+id/cb_Send2Me" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:visibility="gone"/>
+    </TableRow>
+    </TableLayout>
+    </LinearLayout>
+ 
+ <LinearLayout android:id="@+id/Layout_Save_Button" 
+                  android:layout_width="match_parent" 
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical|center_horizontal" 
+                  android:orientation="horizontal"
+                  android:visibility="visible">
+                  
+    <ImageButton android:layout_width="100px" 
+                 android:layout_height="100px" 
+                 android:id="@+id/imb_SaveSmsEvent"
+                 android:background="@drawable/bt_savese">
+                 </ImageButton>
+    <ImageButton android:layout_width="100px" 
+                 android:layout_height="100px" 
+                 android:id="@+id/imb_UpdateSmsEvent"
+                 android:background="@drawable/bt_uptse">
+                 </ImageButton>
+    
+    </LinearLayout> 
+ 
+ 
+
+    
+</LinearLayout>
+
+</HorizontalScrollView>
+</ScrollView> 
+ 
+     
+     
+<ScrollView   android:id="@+id/ScrollView_Setup"
+    android:gravity="center_vertical|center_horizontal"  
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+ 
+<LinearLayout android:id="@+id/Layout_Setup" 
+               android:layout_width="match_parent" 
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal" 
+               android:orientation="vertical"
+               android:visibility="visible">
+ 
+
+ 
+<LinearLayout android:id="@+id/Layout_Setup_option" 
+               android:layout_width="match_parent" 
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal" 
+               android:orientation="vertical"
+               android:visibility="visible"> 
+
+  
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<TableRow android:gravity="center_vertical">
+    <CheckBox android:id="@+id/cb_StartupService"
+           android:text="@string/cb_StartupService" 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"/> 
+</TableRow>   
+
+<TableRow android:gravity="center_vertical">
+    <CheckBox android:id="@+id/cb_SendNotify"
+           android:text="@string/cb_SendNotify" 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"/> 
+</TableRow>
+
+<TableRow android:gravity="center_vertical">
+        
+ <CheckBox android:id="@+id/cb_SendLog2Me"
+           android:text="@string/cb_SendLog2Me" 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"
+           android:visibility="gone"/>
+ <Button android:id="@+id/bt_SendLog2Me" 
+            android:layout_width="100px"
+            android:layout_height="wrap_content" 
+            android:text="@string/bt_SendLog2Me"
+            android:visibility="gone"/>          
+ <TextView android:layout_width="wrap_content" 
+           android:layout_height="wrap_content" 
+           android:id="@+id/tv_SendLog2Me" 
+           android:text="@string/tv_SendLog2Me"
+           style="@style/Label" 
+           android:visibility="gone"
+           />
+</TableRow>
+
+<TableRow android:gravity="center_vertical">
+    <CheckBox android:id="@+id/cb_SendGEO"
+           android:text="@string/cb_SendGEO" 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"/> 
+</TableRow> 
+ 
+</TableLayout>
+</LinearLayout>
+
+
+<LinearLayout android:id="@+id/Layout_Setup_button" 
+               android:layout_width="match_parent" 
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal" 
+               android:orientation="horizontal"
+               android:visibility="visible">
+<ImageButton android:id="@+id/imb_SaveSetup"
+        android:background="@drawable/imb_savesetup" 
+        android:layout_width="100px" 
+        android:layout_height="100px" />
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>

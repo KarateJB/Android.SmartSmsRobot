@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    >
+    
+ <ScrollView   
+   android:id="@+id/ScrollView_Main01"
+   android:gravity="center_vertical|center_horizontal"  
+   android:layout_height="wrap_content" 
+   android:layout_width="fill_parent">
+
+<LinearLayout 
+    android:id="@+id/Layout_Main01"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    >
+    
+    
+<LinearLayout 
+    android:id="@+id/Layout_Main02"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="clip_horizontal|center_vertical"
+    android:visibility="gone"
+    >
+<ImageButton android:layout_width="80px" 
+                android:layout_height="80px" 
+                android:id="@+id/imb_main_option01" 
+                android:background="@drawable/bt_main_option01"/>
+
+<ImageButton android:layout_width="80px" 
+                android:layout_height="80px" 
+                android:id="@+id/imb_main_option02" 
+                android:background="@drawable/bt_main_option02"/>
+
+<ImageButton android:layout_width="80px" 
+                android:layout_height="80px" 
+                android:id="@+id/imb_main_option03" 
+                android:background="@drawable/bt_main_option03"/>
+
+<ImageButton android:layout_width="80px" 
+                android:layout_height="80px" 
+                android:id="@+id/imb_main_option99" 
+                android:background="@drawable/bt_main_option99"/>
+
+</LinearLayout>    
+    
+    
+<ImageView  
+      android:src="@drawable/icon" android:id="@+id/iv_Main"
+      android:layout_width="wrap_content" android:layout_height="wrap_content"
+      >
+</ImageView>
+
+    
+    
+<LinearLayout 
+    android:id="@+id/Layout_Language"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    >
+<Button android:text="Language/語言" 
+            android:id="@+id/bt_SetLanguage"
+            android:background="@drawable/mybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+</LinearLayout>
+
+</LinearLayout>
+
+    
+    
+</ScrollView>
+</LinearLayout>

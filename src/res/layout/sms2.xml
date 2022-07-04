@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+ 
+<LinearLayout 
+    android:id="@+id/Layout_Title"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    >
+
+
+</LinearLayout>
+
+    
+<LinearLayout android:id="@+id/Layout_admob" 
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal" 
+               android:orientation="horizontal"
+               android:visibility="visible">
+</LinearLayout>
+    
+    
+    
+
+<LinearLayout 
+ android:id="@+id/Layout_Menu" android:layout_width="match_parent"
+ android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" 
+ android:visibility="visible">
+ 
+<LinearLayout 
+ android:id="@+id/Layout_Menu_Chd01" android:layout_width="wrap_content"
+ android:layout_height="wrap_content" android:gravity="center_vertical" 
+ android:orientation="vertical"
+ android:visibility="visible">
+    <ImageButton android:layout_width="150px" android:layout_height="70px" android:id="@+id/imb_browse" android:background="@drawable/imb_main02_01"/>
+    <ImageButton android:layout_width="120px" android:layout_height="70px" android:id="@+id/imb_menu03" android:background="@drawable/imb_main_00"/>
+    <ImageButton android:layout_width="150px" android:layout_height="70px" android:id="@+id/imb_lock" android:background="@drawable/imb_main02_05"/>
+</LinearLayout>    
+  
+<LinearLayout 
+ android:id="@+id/Layout_Menu_Chd02" android:layout_width="wrap_content"
+ android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" 
+ android:orientation="vertical"
+ android:visibility="visible">  
+    <ImageView
+ android:id="@+id/iv_Title"
+ android:src="@drawable/main_title"
+    android:orientation="vertical"
+    android:layout_width="160px"
+    android:layout_height="160px"
+    android:gravity="center_vertical|center_horizontal"
+ ></ImageView>
+</LinearLayout>
+
+ 
+<LinearLayout 
+ android:id="@+id/Layout_Menu_Chd03" android:layout_width="wrap_content"
+ android:layout_height="wrap_content" android:orientation="vertical"
+ android:visibility="visible" android:gravity="right|center_vertical">  
+ 	<ImageButton android:layout_width="150px" android:layout_height="70px" android:id="@+id/imb_latest" android:background="@drawable/imb_main02_02"/>  
+    <ImageButton android:layout_width="120px" android:layout_height="70px" android:id="@+id/imb_menu04" android:background="@drawable/imb_main_00"/>
+    <ImageButton android:layout_width="150px" android:layout_height="70px" android:id="@+id/imb_unlock" android:background="@drawable/imb_main02_06"/>
+</LinearLayout>
+
+</LinearLayout>
+
+
+
+<LinearLayout 
+ android:id="@+id/Layout_SmsBox" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:gravity="center_vertical|center_horizontal" 
+ android:orientation="vertical"
+ android:visibility="visible"> 
+ 
+ 
+ <ListView 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     style="@style/Label_Log"
+     android:drawSelectorOnTop="false" android:id="@+id/lv_SmsBox"/>
+     
+</LinearLayout>
+
+
+
+
+   
+<LinearLayout android:id="@+id/Layout_EncSms" 
+               android:layout_width="match_parent" 
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal" 
+               android:orientation="vertical"
+               android:visibility="visible">
+
+<ScrollView   
+   android:id="@+id/ScrollView_MySms"
+   android:gravity="center_vertical|center_horizontal"  
+   android:layout_height="wrap_content" 
+   android:layout_width="fill_parent">
+
+<LinearLayout android:id="@+id/Layout_MySms" 
+           android:layout_width="match_parent" 
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical|center_horizontal" 
+           android:orientation="vertical"
+           android:visibility="visible">
+           
+   <TextView android:id="@+id/tv_MySmsDateTime" 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content" 
+           android:visibility="gone"
+           />
+   <TextView android:id="@+id/tv_MySmsSender" 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content" 
+           android:visibility="gone"
+           />  
+   <TextView android:id="@+id/tv_MySmsPNum" 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content" 
+           android:visibility="gone"
+           />        
+   <TextView android:id="@+id/tv_MySms" 
+           android:layout_width="match_parent" 
+           android:layout_height="wrap_content" 
+           style="@style/Text_NewSMS" 
+           />
+   
+   <EditText android:id="@+id/et_ReplySms" 
+           android:layout_width="match_parent" 
+           android:layout_height="wrap_content" 
+           style="@style/Text_ReplySMS" 
+           />
+   
+   </LinearLayout>
+</ScrollView>
+       
+   <LinearLayout android:id="@+id/Layout_EncSmsButton" 
+                  android:layout_width="match_parent" 
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical|center_horizontal" 
+                  android:orientation="horizontal"
+                  android:visibility="visible">    
+    
+   <ImageButton android:layout_width="90px" 
+                android:layout_height="90px" 
+                android:id="@+id/imb_save_sms" 
+                android:background="@drawable/bt_save_sms"/>
+   <ImageButton android:layout_width="90px" 
+                android:layout_height="90px" 
+                android:id="@+id/imb_reply_sms" 
+                android:background="@drawable/bt_reply_sms"/>
+   <ImageButton android:layout_width="90px" 
+                android:layout_height="90px" 
+                android:id="@+id/imb_skip_sms" 
+                android:background="@drawable/bt_skip_sms"/>
+   </LinearLayout>
+    
+</LinearLayout> 
+
+
+
+ <ScrollView   
+   android:id="@+id/ScrollView_Save"
+   android:gravity="center_vertical|center_horizontal"  
+   android:layout_height="wrap_content" 
+   android:layout_width="fill_parent">
+ <HorizontalScrollView 
+   android:id="@+id/HorizontalScrollView_Save"
+   android:gravity="center_vertical|center_horizontal"  
+   android:layout_height="fill_parent" 
+   android:layout_width="wrap_content">
+<LinearLayout android:id="@+id/Layout_OpenSms" 
+               android:layout_width="match_parent" 
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical|center_horizontal" 
+               android:orientation="vertical"
+               android:visibility="visible">
+    
+  <TextView android:id="@+id/tv_OpenSmsSN" 
+           android:layout_width="match_parent" 
+           android:layout_height="wrap_content" 
+           android:visibility="gone"
+           />        
+   <TextView android:id="@+id/tv_OpenSms" 
+           android:layout_width="match_parent" 
+           android:layout_height="wrap_content" 
+           android:singleLine="false"
+           style="@style/Text_OpenSMS" 
+           />
+       
+   <LinearLayout android:id="@+id/Layout_OpenSms_button" 
+                  android:layout_width="match_parent" 
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical|center_horizontal" 
+                  android:orientation="horizontal"
+                  android:visibility="visible">
+     	<ImageButton android:layout_width="90px" 
+                android:layout_height="90px" 
+                android:id="@+id/imb_del_sms" 
+                android:background="@drawable/bt_del_sms"/>
+   		<ImageButton android:layout_width="90px" 
+                android:layout_height="90px" 
+                android:id="@+id/imb_back_sms" 
+                android:background="@drawable/bt_back_sms"/> 
+    
+   </LinearLayout>
+    
+</LinearLayout> 
+
+</HorizontalScrollView>
+</ScrollView>
+
+<LinearLayout 
+ android:id="@+id/Layout_Lock" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:gravity="center_vertical|center_horizontal" 
+ android:orientation="vertical"
+ android:visibility="visible"> 
+ 
+ <TextView android:id="@+id/tv_InputLockPwd" 
+           android:text="@string/tv_LockPwd"
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content" 
+           style="@style/Label_nml" 
+           />
+ <EditText android:id="@+id/et_InputLockPwd" 
+           android:layout_width="200px" 
+           android:layout_height="wrap_content" 
+           android:maxLength="20"
+           android:password="true"/>
+ <ImageButton android:layout_width="100px" 
+              android:layout_height="100px" 
+              android:id="@+id/imb_lock_sms" 
+              android:background="@drawable/bt_lock"/> 
+     
+</LinearLayout>
+
+<LinearLayout 
+ android:id="@+id/Layout_Unlock" 
+ android:layout_width="match_parent" 
+ android:layout_height="wrap_content"
+ android:gravity="center_vertical|center_horizontal" 
+ android:orientation="vertical"
+ android:visibility="visible"> 
+ 
+ <TextView android:id="@+id/tv_InputUnlockPwd" 
+           android:text="@string/tv_UnlockPwd"
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content" 
+           style="@style/Label_nml" 
+           />
+ <EditText android:id="@+id/et_InputUnlockPwd" 
+           android:layout_width="200px" 
+           android:layout_height="wrap_content" 
+           android:maxLength="20"
+           android:password="true"/>
+  <ImageButton android:layout_width="100px" 
+              android:layout_height="100px" 
+              android:id="@+id/imb_unlock_sms" 
+              android:background="@drawable/bt_unlock"/>   
+</LinearLayout>
+    
+</LinearLayout>
